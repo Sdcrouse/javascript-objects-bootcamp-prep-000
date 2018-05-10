@@ -12,7 +12,7 @@ function updatePlaylist (playlist, nameOfArtist, titleOfSong) {
 function removeFromPlaylist (playlist, artistName) {
   delete playlist[artistName];
   return playlist;
-  //return;
+  //return; (incorrect, but still passes)
 }
 // Looks like the tests forgot to check whether updatePlaylist and removeFromPlaylist return the updated playlists.
 /* A note on terminology regarding the following line of code:
