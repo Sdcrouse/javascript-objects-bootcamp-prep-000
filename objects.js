@@ -1,10 +1,10 @@
 var playlist = {'Elvis Presley' : "Blue Christmas", Aerosmith: "Dream On", tenthAvenueNorth: "You Are More"};
 
 function updatePlaylist (playlist, nameOfArtist, titleOfSong) {
-  //return Object.assign(playlist, {[nameOfArtist]: titleOfSong});
-  /* This works, too: */
+  return Object.assign(playlist, {[nameOfArtist]: titleOfSong});
+  /* This works, too:
   playlist[nameOfArtist] = titleOfSong;
-  return;
+  return; */
   //return playlist;
   // Remember to enclose any variable keys in brackets!!!
 }
