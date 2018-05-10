@@ -1,16 +1,18 @@
 var playlist = {'Elvis Presley' : "Blue Christmas", Aerosmith: "Dream On", tenthAvenueNorth: "You Are More"};
 
 function updatePlaylist (playlist, nameOfArtist, titleOfSong) {
-  return Object.assign(playlist, {[nameOfArtist]: titleOfSong});
-  /* This works, too:
+  //return Object.assign(playlist, {[nameOfArtist]: titleOfSong});
+  /* This works, too: */
   playlist[nameOfArtist] = titleOfSong;
-  return playlist; */
+  return;
+  //return playlist;
   // Remember to enclose any variable keys in brackets!!!
 }
 
 function removeFromPlaylist (playlist, artistName) {
   delete playlist[artistName];
-  return playlist;
+  return;
+  //return playlist;
 }
 // Looks like the tests forgot to check whether updatePlaylist and removeFromPlaylist return the updated playlists.
 /* A note on terminology regarding the following line of code:
